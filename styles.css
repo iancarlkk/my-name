@@ -1,0 +1,546 @@
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling behavior */
+}
+
+/* Your other CSS styles for sections, header, etc. */
+
+header {
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 5px 0;
+    display: flex;
+    justify-content:space-around;
+}
+/* Define the animation */
+/* Define the animation */
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply animation to the button on hover */
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease; /* Add smooth transition for the animation */
+}
+
+.button:hover {
+    animation: scaleAnimation 0.5s ease-in-out; /* Apply the animation on hover */
+}
+
+
+
+
+h1 {
+    margin: 0;
+    
+}
+
+.container {
+    width: 70%;
+    padding: 0;
+    margin: 0 auto;
+    color: whitesmoke;
+}
+
+
+.fry{
+  background-color: black;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: #000;
+  background: black;
+}
+nav{
+  position: fixed;
+  background: black;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: #e90000;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position:relative;
+}
+.menu .logo a:hover{
+  background: #fff;
+  color: black;
+}
+.menu .logo a::after  {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+.menu .logo a:hover::after{
+  width: 20%;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position:relative;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+.menu ul li a::after  {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+.menu ul li a:hover::after{
+  width: 20%;
+}
+
+.img{
+  background: url('')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center{
+  position:absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align:left;
+}
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+  transition: color 0.5s ease-out 100ms
+}
+.center .title:hover{
+  color: #ff004f;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+  transition: color 0.5s ease-out 100ms
+}
+.center .sub_title:hover{
+  color: red;
+}
+
+
+
+
+.center .btns{
+  margin-top: 20px;
+}
+.center .btns button{
+  height: 55px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+
+}
+.center .btns button:first-child{
+  color: white;
+  background: none;
+}
+.btns button:first-child:hover{
+  background: #ffffff;
+  color: black;
+}
+.center .btns button:last-child{
+  background: black;
+  color: white;
+}
+.btns button:last-child:hover{
+  background: white;
+  color: black;
+}
+
+.edit-section {
+    animation: moveUpDown 2s ease-in-out infinite alternate;
+    font-size: large;
+    margin-bottom: 30px;
+
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.about-me {
+  padding: 130px 0;
+  text-align: left;
+  background-color: #000;
+}
+
+
+.about-content {
+  background-color: violet;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.page {
+  display:contents;
+  flex-direction: row;
+}
+
+
+/* Page content */
+.page-content {
+  width: 70%;
+  height: auto; /* Adjust the width as needed */
+  margin-right: 20px; /* Add spacing between pages */
+  overflow:hidden;
+}
+
+
+/* Image container with cover animation */
+.animated-cover {
+  position: relative;
+  width: 200px; /* Width of the image container */
+  height: 200px; /* Height of the image container */
+  overflow: hidden;
+  border-radius: 30%; /* Make the container circular */
+ 
+}
+
+
+.animated-cover img.circular-image {
+  width: 100%; /* Ensure the image fills the container */
+  height: 100%; /* Ensure the image fills the container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+/* Image inside the cover */
+.animated-cover img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease; /* Transition for smooth animation */
+  transform-origin: left; /* Set the transform origin to the left */
+}
+
+
+/* Animation on hover */
+.animated-cover img:hover {
+  transform: scale(1.2); /* Scale up the image */
+}
+
+
+
+
+/* Additional styles for the text content */
+.edit-section {
+  transition: opacity 0.5s ease; /* Transition for text opacity */
+  opacity: 0; /* Initially hide the text content */
+  color:rgb(158, 26, 158);
+  font-family:cursive;
+  padding: 50px;
+}
+.name{
+color: black;
+margin-right: 20px;
+}
+
+/* Show text content on hover */
+.animated-cover:hover + .edit-section {
+  opacity: 1;
+}
+
+.achievements{
+display:flex;
+flex-direction:row;
+justify-content: space-between;
+align-items: center;
+margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+
+/* Style for each achievement item */
+.achievement-item {
+width: 200px; /* Adjust the width of each achievement item */
+height: auto;
+overflow: hidden;
+}
+
+
+/* Image inside each achievement item */
+.achievement-item img {
+width: 100%;
+height: auto;
+transition: transform 0.5s ease; /* Transition for smooth animation */
+transform-origin:top;
+align-items:center;
+}
+
+
+/* Animation on hover for achievement items */
+.achievement-item:hover img {
+transform: scale(1.2); /* Scale up the image */
+}
+ 
+
+
+.containers {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* Styling for services section */
+.services {
+  padding: 50px 0;
+  
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service-item {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out;
+  
+}
+
+.service-item img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  transition: color 0.4s ease-in-out;
+}
+
+.service-item p {
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.service-item:hover img {
+  transform: scale(1.1);
+  border-radius: 30%; 
+}
+
+.service-item:hover h3 {
+  color: #ff6347; /* Change the color on hover */
+}
+
+.service-item:hover p {
+  opacity: 0; /* Hide the text on hover */
+}
+
+.service-item:hover::before {
+  content: 'New Text'; /* Change the text on hover */
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.service-item:hover::before {
+  opacity: 0; /* Hide the original text */
+}
+
+.edit-text{
+    color:rgb(158, 26, 158);
+    font-family:cursive;
+    padding: 50px;
+
+}
+
+.about-text h2{
+  color:white;
+  font-size: 75px;
+  text-transform:capitalize;
+  margin-bottom: 20px;
+  }
+  .about-text p{
+      color:white;
+      letter-spacing: 1px;
+      line-height: 28px;
+      font-size: 18px;
+      margin-bottom: 45px;
+  }
+
+  .about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color:black;
+}
+.about img{
+    height:auto;
+    width: 430px;
+    border-radius: 20px;
+}
+
+.about-text {
+   width: 550px;
+}
+.main{
+    width:1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.main img {
+  --s: 250px;   /* the size of the image */
+  --b: 8px;     /* the border thickness*/
+  --g: 14px;    /* the gap */
+  --c: #4ECDC4; /* the color */
+  
+  width: var(--s);
+  aspect-ratio: 1;
+  outline: calc(var(--s)/2) solid #0009;
+  outline-offset: calc(var(--s)/-2);
+  cursor: pointer;
+  transition: .3s;
+}
+.main img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
+
+.mainimg + img {
+  border-radius: 50%;
+}
+
+
+.about-text h2{
+color:white;
+font-size: 75px;
+text-transform:capitalize;
+margin-bottom: 20px;
+}
+.about-text p{
+    color:white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
